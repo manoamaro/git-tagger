@@ -12,8 +12,6 @@ chmod 700 "$SSH_PATH"
 chmod 600 "$SSH_PATH/known_hosts"
 chmod 600 "$SSH_PATH/id_rsa"
 
-cat "$SSH_PATH/id_rsa"
-
 eval $(ssh-agent)
 
 ssh-add "$SSH_PATH/id_rsa"
