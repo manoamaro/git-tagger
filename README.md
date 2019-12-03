@@ -6,19 +6,19 @@ Small and simple Docker image to create and push a tag into a git repository
 You need to run the docker image with the following environment variables set:
 
 * `GIT_USER_NAME` Name of the user who will create the tag. Required for git configuration.
-	* Eg. Gitlab CI
+	* Eg. `Gitlab CI`
 * `GIT_USER_EMAIL` Email of the user who will create the tag. Required for git configuration.
-	* Eg. git@example.com
+	* Eg. `git@example.com`
 * `GIT_REPO` Git SSH URL repository of which you want to push the tag.
-	* Eg. git@github.com:manoamaro/git-tagger.git
+	* Eg. `git@github.com:manoamaro/git-tagger.git`
 * `GIT_PRIVATE_KEY` Private key of git repository account encoded in base64. This account needs to have write access to the repository.
 	* How to generate: `cat ~/.ssh/id_rsa | openssl base64 | tr -d '\n'`
 * `GIT_HOST` The host of the git repository, for ssh known hosts reasons.
-	* Eg. github.com
+	* Eg. `github.com`
 * `GIT_REF` The branch name where the tag should be created.
-	* Eg. develop
+	* Eg. `develop`
 * `TAG_NAME` The new tag name.
-	* Eg. release_1.0
+	* Eg. `release_1.0`
 
 ## Example
 
